@@ -9,7 +9,6 @@ def html_get(url):
 
     response = requests.get(url, headers=headars)
     e = etree.HTML(response.text)
-    soup = BeautifulSoup(response.content, 'lxml')
 
     # 标题
     titles = e.xpath('//a[@class="s xst"]/text()')
