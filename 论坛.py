@@ -1,6 +1,5 @@
 import requests
 from lxml import etree
-from bs4 import BeautifulSoup
 import re
 
 def html_get(url):
